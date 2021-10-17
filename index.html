@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+
+
+<style>
+
+body {
+    /* margin:0;  */
+   background: linear-gradient(rgb(8, 134, 207), rgb(3, 43, 66));
+}
+
+form {
+    
+    margin-bottom: 10px;
+}
+
+#rowX {
+
+    width: 50px;
+}
+
+h2 {
+    color:white;
+    font-size:20px;
+}
+
+.winner {
+
+    display:flex;
+    position: absolute;
+    left: 160px;
+}
+
+.hidden {
+
+    display:none;
+
+}
+</style>
+</head>
+<body>
+    
+    <h1>MAZEEEEEE</h1>
+    <h3>Choose the Size of your Maze: 1-100 </h3>
+    
+
+    <form action="" method="post" id="mazeSize">
+
+        <input type="text" name="rowX" id="rowX" > 
+        <!-- <input type="text" name="colY" id="colY">  -->
+        <button type="submit">Generate</button>
+    </form>
+    <div class="hidden winner">
+        <h2>You WIN!!</h2>    
+    </div>
+    
+
+
+    <script src="app.js"></script> 
+</body>
+
+</html>
